@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Book List
+{% endblock title%}
+
+{% block content %}
+  <h1>All Books</h1>
+
+  <a class="anchor-btn btn-primary" href="{% url 'books:book_new' %}">+ New Book</a>
+
+  <table class="book-table">
+    <tr>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Rating</th>
+      <th>Quantity</th>
+    </tr>
+
+    {% for book in books %}
+    <tr>
+      <td>
+        <a href="{% url 'books:book_detail' book.pk %}">
+          {{ book.title }}
+        </a>
+      </td>
+      <td>${{ book.price }}</td>
+      <td>{{ book.rating }} of 5</td>
+      <td>{{ book.quantity }}</td>
+    </tr>
+  {% endfor %}
+  </table>
+{% endblock content %}

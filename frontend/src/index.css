@@ -1,0 +1,96 @@
+:root {
+  --clr-background: #f2fafb;
+  --clr-white: #fff;
+  --clr-black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-background);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  width: 95vw;
+  max-width: 1190px;
+  margin: 1rem auto;
+  background-color: var(--clr-white);
+}
+
+.form-field {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.form-field table {
+  width: 100%;
+}
+
+.form-field table input {
+  font-size: 1rem;
+  padding: 0.225rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.form-field table .label-column {
+  width: 20%;
+}
+
+
+/* Book list design */
+.book-list {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  gap: 1rem;
+}
+
+.book-list .book {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--clr-black);
+}
+/* Book list design end */
+
+.btn {
+  border: none;
+  border-radius: 0.3rem;
+  height: 30px;
+  width: 90px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: var(--clr-white);
+}
+
+.btn-danger {
+  background-color: #bd2130;
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 75vw;
+    padding: 1rem;
+  }
+
+  .form-field {
+    width: 500px;
+  }
+
+  .book-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
