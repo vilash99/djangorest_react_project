@@ -25,6 +25,4 @@ This project is licensed under the MIT License.
 ## Contact me
 If you need any web app similar to this or have new requirements. You can contact me at **vilashdd[at]gmail[com].**
 
-My website: https://vilashdaate.com/
-
-My blog: https://www.kushalstudy.com/
+My website: https://www.vpktechnologies.com/
